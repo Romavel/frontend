@@ -1,0 +1,194 @@
+@import "./Home.css";
+
+.schedule-page {
+    max-width: auto;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.schedule-page h2 {
+    text-align: center;
+    color: #0056b3;
+    font-size: var(--dynamic-font-size);
+    margin-bottom: 30px;
+}
+
+.schedule-section {
+    margin-bottom: 40px;
+    border: 2px solid #0056b3;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.schedule-section h3 {
+    color: #0056b3;
+    font-size: var(--dynamic-font-size);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.floor-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.floor-btn {
+    padding: 15px 25px;
+    font-size: var(--dynamic-font-size);
+    font-weight: bold;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.floor-btn:hover,
+.floor-btn.selected {
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+}
+
+.schedule-placeholder {
+    text-align: center;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    font-size: var(--dynamic-font-size);
+}
+
+
+/* Rozwijane menu języka */
+.language-dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: var(--dynamic-font-size);
+}
+
+.language-btn {
+    background: #0056b3;
+    border: none;
+    font-size: var(--dynamic-font-size);
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.language-options {
+    display: none;
+    position: absolute;
+    background-color: #0056b3;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    padding: 5px 0;
+}
+
+.language-dropdown:hover .language-options {
+    display: block;
+}
+
+.language-options button {
+    color: white;
+    background: none;
+    border: none;
+    padding: 8px 12px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-size: var(--dynamic-font-size);
+}
+
+.language-options button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.room-group {
+    margin-bottom: 20px;
+  }
+  
+  .room-group > strong {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+
+  .schedule-list,
+.schedule-list ul,
+.schedule-list li {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.schedule-section input[type="date"] {
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border: 2px solid #005baa; /* niebieski z nagłówka */
+    border-radius: 8px;
+    background-color: #f5faff;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .schedule-section input[type="date"]:hover,
+  .schedule-section input[type="date"]:focus {
+    border-color: #003d80;
+    background-color: #e9f2ff;
+    outline: none;
+  }
+  
+  @media (max-width: 600px) {
+    .schedule-section input[type="date"] {
+      width: 100%;
+    }
+  }
+
+/* High contrast mode */
+.high-contrast .schedule-section {
+    background-color: black;
+    color: yellow;
+    border-color: yellow;
+}
+
+.high-contrast .floor-btn {
+    background: black;
+    border: 1px solid yellow;
+    color: yellow;
+}
+
+.high-contrast .floor-btn:hover,
+.high-contrast .floor-btn.selected {
+    background: yellow;
+    color: black;
+}
+
+.high-contrast .schedule-placeholder {
+    background-color: black;
+    color: yellow;
+}
+
+/* Menu języka w trybie wysokiego kontrastu */
+.high-contrast .language-dropdown {
+    background-color: black;
+}
+
+.high-contrast .language-options {
+    background-color: black;
+}
+
+.high-contrast .language-options button {
+    color: yellow;
+    background: black;
+    border: 1px solid yellow;
+}

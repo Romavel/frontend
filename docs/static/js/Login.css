@@ -1,0 +1,186 @@
+/* Import globalnych stylów */
+@import "./Home.css";
+
+/* Kontener logowania */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    max-width: 400px;
+    margin: auto;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Nagłówek logowania */
+.login-container h2 {
+    font-size: var(--dynamic-font-size);
+    color: #0056b3;
+    text-align: center;
+}
+
+/* Formularz */
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Etykiety pól */
+.login-container label {
+    font-size: var(--dynamic-font-size);
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Pola formularza */
+.login-container input {
+    padding: 10px;
+    font-size: var(--dynamic-font-size);
+    border: 2px solid #0056b3;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+/* Przycisk logowania */
+.login-container button {
+    background-color: #0056b3;
+    color: white;
+    font-size: var(--dynamic-font-size);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.login-container button:hover {
+    background-color: #003f7f;
+}
+
+/* Wiadomość błędu */
+.login-container p {
+    font-size: var(--dynamic-font-size);
+    color: red;
+    text-align: center;
+}
+
+/* Link do rejestracji */
+.login-container a {
+    color: #0056b3;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+/* Tryb wysokiego kontrastu */
+.high-contrast .login-container {
+    background-color: black;
+    color: yellow;
+    border: 2px solid yellow;
+}
+
+.high-contrast .login-container label,
+.high-contrast .login-container a {
+    color: yellow;
+}
+
+.high-contrast .login-container input {
+    border: 2px solid yellow;
+    background-color: black;
+    color: yellow;
+}
+
+.high-contrast .login-container button {
+    background-color: black;
+    color: yellow;
+    border: 2px solid yellow;
+}
+
+.high-contrast .login-container button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+
+
+
+@import "./Home.css";
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    max-width: 400px;
+    margin: auto;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.login-container h2, .login-container h3 {
+    font-size: var(--dynamic-font-size);
+    color: #0056b3;
+    text-align: center;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login-container label {
+    font-size: var(--dynamic-font-size);
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+.login-container input {
+    padding: 10px;
+    font-size: var(--dynamic-font-size);
+    border: 2px solid #0056b3;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.login-container button {
+    background-color: #0056b3;
+    color: white;
+    font-size: var(--dynamic-font-size);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.login-container button:hover {
+    background-color: #003f7f;
+}
+
+.high-contrast .login-container {
+    background-color: black;
+    color: yellow;
+    border: 2px solid yellow;
+}
+
+.high-contrast .login-container button {
+    background-color: black;
+    color: yellow;
+    border: 2px solid yellow;
+}

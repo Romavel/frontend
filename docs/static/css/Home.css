@@ -1,0 +1,225 @@
+/* Ustawienie zmiennej CSS do dynamicznej zmiany czcionki */
+:root {
+    --dynamic-font-size: 20px;
+}
+
+/* Główna struktura strony */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Cała wysokość ekranu */
+    font-size: var(--dynamic-font-size);
+}
+
+/* Nagłówek */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #0056b3;
+    color: white;
+    font-size: var(--dynamic-font-size);
+}
+
+/* Logo */
+.logo img {
+    height: 60px;
+}
+
+/* Menu w nagłówku */
+.top-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Linki w nagłówku */
+.top-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: var(--dynamic-font-size);
+}
+
+/* Przyciski kontroli */
+.control-button {
+    background-color: #0056b3;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: var(--dynamic-font-size);
+}
+
+.control-button:hover {
+    background-color: #003f7f;
+}
+
+/* Kafelki */
+/* Kontener dla kafelków */
+.tiles-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Mały odstęp między kafelkami */
+    margin-top: 50px;
+    padding: 0 20px; /* Mały odstęp od brzegów ekranu */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Kafelki */
+.tile {
+    flex: 1; /* Powoduje, że każdy kafelek zajmuje równą część szerokości */
+    height: 30vh; /* Powiększona wysokość kafelków */
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--dynamic-font-size);
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Zmiana wyglądu kafelków po najechaniu */
+.tile:hover {
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+}
+
+/* Styl linków wewnątrz kafelków */
+.tile a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Stopka */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #0056b3;
+    color: white;
+    margin-top: auto;
+    font-size: var(--dynamic-font-size);
+}
+
+footer .footer-links {
+    margin-top: 5px;
+}
+
+footer .footer-links a {
+    color: white;
+    text-decoration: underline;
+    margin: 0 5px;
+}
+
+.high-contrast footer {
+    background: black;
+    color: yellow;
+}
+
+.high-contrast .footer-links a {
+    color: yellow;
+}
+
+
+/* Rozwijane menu języka */
+.language-dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: var(--dynamic-font-size);
+}
+
+.language-btn {
+    background: #0056b3;
+    border: none;
+    font-size: var(--dynamic-font-size);
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.language-options {
+    display: none;
+    position: absolute;
+    background-color: #0056b3;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    padding: 5px 0;
+}
+
+.language-dropdown:hover .language-options {
+    display: block;
+}
+
+.language-options button {
+    color: white;
+    background: none;
+    border: none;
+    padding: 8px 12px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-size: var(--dynamic-font-size);
+}
+
+.language-options button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Tryb wysokiego kontrastu */
+.high-contrast {
+    background-color: white;
+    color: black;
+}
+
+/* Nagłówek i stopka w trybie wysokiego kontrastu */
+.high-contrast header, .high-contrast footer, .high-contrast .language-btn {
+    background-color: black;
+    color: yellow;
+}
+
+/* Zmiana koloru tekstu dla wszystkich elementów */
+.high-contrast a,
+.high-contrast p,
+.high-contrast button,
+.high-contrast .tile-text {
+    color: yellow;
+    font-size: var(--dynamic-font-size);
+}
+
+/* Przyciski w trybie wysokiego kontrastu */
+.high-contrast .control-button {
+    background-color: black;
+    color: yellow;
+    border: 1px solid yellow;
+}
+
+/* Kafelki w trybie wysokiego kontrastu (nie zmieniamy kolorów) */
+.high-contrast .tile {
+    background: black;
+    color: white;
+}
+
+/* Menu języka w trybie wysokiego kontrastu */
+.high-contrast .language-dropdown {
+    background-color: black;
+}
+
+.high-contrast .language-options {
+    background-color: black;
+}
+
+.high-contrast .language-options button {
+    color: yellow;
+    background: black;
+    border: 1px solid yellow;
+}
