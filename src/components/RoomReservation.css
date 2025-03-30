@@ -1,0 +1,105 @@
+@import "./Home.css";
+
+.reservation-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-container h2 {
+    text-align: center;
+    font-size: var(--dynamic-font-size);
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+form fieldset {
+    margin-bottom: 25px;
+    border: 2px solid #0056b3;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+form legend {
+    font-weight: bold;
+    color: #0056b3;
+    font-size: var(--dynamic-font-size);
+    padding: 0 10px;
+}
+
+form input, form select, form textarea {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: var(--dynamic-font-size);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form label {
+    margin-top: 10px;
+    font-size: var(--dynamic-font-size);
+}
+form label {
+    display: block;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0056b3;
+    color: white;
+    font-size: var(--dynamic-font-size);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #003f7f;
+}
+
+.high-contrast .reservation-container {
+    background-color: black;
+    color: yellow;
+}
+
+.high-contrast input, 
+.high-contrast select, 
+.high-contrast textarea {
+    background-color: black;
+    color: yellow;
+    border: 1px solid yellow;
+}
+
+.high-contrast button {
+    background-color: black;
+    color: yellow;
+    border: 2px solid yellow;
+}
+
+
+.reservation-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .reservation-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
